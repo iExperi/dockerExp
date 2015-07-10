@@ -1,0 +1,5 @@
+#!/bin/sh
+yum install Virtualbox-4.3
+./docker-machine_linux-amd64 rm vboxtest
+./docker-machine_linux-amd64 create --driver=virtualbox vboxtest
+./docker-machine start vboxtest
